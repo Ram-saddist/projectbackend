@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 
 app.use(cors())
 
-mongoose.connect("mongodb+srv://react:react@cluster0.p9z4win.mongodb.net/firstdb?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://Lokesh1452739:Lokesh1452739@cluster0.s8qbfbt.mongodb.net/firstdb?retryWrites=true&w=majority")
     .then(()=>{
         console.log("Mongodb connected successfully")
     })
@@ -36,6 +36,7 @@ app.post("/store",(req,res)=>{
         username,password
     })
     newData.save()
+    res.send()
 })
 
 app.listen(port,()=> console.log("server is running on port",port))
